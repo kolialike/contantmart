@@ -1,0 +1,212 @@
+#header
+	line-height: 0
+	font-size: 0
+	background: #fff
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 100
+	width: 100%
+	.logo
+		vertical-align: top
+		margin-left: 30px
+		display: inline-block
+		margin-top: 24px
+		+transition(0.3s)
+		+breakpoint($break-1150)
+			margin: 20px 0px
+		&:hover
+			+opacity(0.5)
+		img 
+			display: inline-block
+			vertical-align: middle
+			margin-right: 13px
+	.header-menu 
+		display: inline-block
+		+breakpoint($break-1150)
+			display: none
+		li 
+			float: left
+			font-weight: 600
+			font-size: 16px
+			letter-spacing: 0.14px
+			text-align: left
+			margin-right: 17px
+			+transition(0.3s)
+			a 
+				padding: 33px 27px 32px
+				+transition(0.3s)
+				color: #1a2a33
+				display: inline-block
+				line-height: 20px
+			&:hover
+				background: #f0f1f2
+				a 
+					&:hover
+						color: #000000
+	.register
+		float: right
+		+breakpoint($break-1150)
+			display: none
+		a
+			float: left
+			font-weight: 600
+			font-size: 16px
+			color: #ffffff
+			letter-spacing: 0.14px
+			text-align: left
+			margin: 26px 0px 19px 16px
+		.login
+			font-weight: 600
+			font-size: 16px
+			letter-spacing: 0.14px
+			text-align: left
+			color: #1a2a33
+			margin: 34px 17px 29px 0px
+			+transition(0.3s)
+			line-height: 20px
+			&:hover
+				color: #cccdcc
+		.writer
+			display: inline-block
+			background: #7ed321
+			+border-radius(5px)
+			padding: 8px 33px 10px 31px
+			+transition(0.3s)
+			line-height: 20px
+			&:hover
+				color: #cccdcc
+				background: #207f0d
+		.client
+			display: inline-block
+			background: #0077ff
+			+border-radius(5px)
+			padding: 8px 33px 10px 31px
+			+transition(0.3s)
+			line-height: 20px
+			&:hover
+				color: #cccdcc
+				background: #1111d4
+
+
+.mobile-menu
+	+opacity(0)
+	position: fixed
+	left: 100%
+	top: 0
+	background: rgba(#000, 0.6)
+	width: 100%
+	height: 100%
+	overflow: auto
+	z-index: 90
+	+box-sizing(border-box)
+	+transition(0.3s)
+	nav
+		background: #fff
+		display: block
+		float: right
+		text-align: center
+		height: 100%
+		padding: 75px 15px 0
+		background: #fff
+		+box-sizing(border-box)
+		a 
+			+transition(0.3s)
+			color: #000
+			font-size: 16px
+			display: inline-block
+			line-height: 20px
+			margin-top: 15px
+			padding: 0px 10px
+			&:hover
+				color: #ccc
+	.login
+		font-weight: 600
+		font-size: 16px
+		letter-spacing: 0.14px
+		text-align: left
+		color: #1a2a33
+		margin: 30px 0 0
+		+transition(0.3s)
+		line-height: 20px
+		&:hover
+			color: #cccdcc
+	.writer
+		display: inline-block
+		background: #7ed321
+		+border-radius(5px)
+		padding: 8px 33px 10px 31px
+		+transition(0.3s)
+		line-height: 20px
+		&:hover
+			color: #cccdcc
+			background: #207f0d
+	.client
+		display: inline-block
+		background: #0077ff
+		+border-radius(5px)
+		padding: 8px 33px 10px 31px
+		+transition(0.3s)
+		line-height: 20px
+		&:hover
+			color: #cccdcc
+			background: #1111d4
+.menu-burger
+	display: none
+	+transition(0.3s)
+	+breakpoint($break-1150)
+		display: inline-block
+		position: absolute
+		cursor: pointer
+		right: 20px
+		top: 30px
+		width: 25px
+		height: 15px
+	.menu-burger-item
+		display: block
+		width: 100%
+		background: #000
+		height: 3px
+		margin-top: 6px
+		+transition(0.3s)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #000
+			height: 3px
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #000
+			height: 3px
+.mobile-menu-open
+	+transition(0.3s)
+	.mobile-menu
+		+transition(0.3s)
+		display: block
+		top: 0
+		left: 0
+		+opacity(1)
+	.menu-burger
+		+transition(0.3s)
+		.menu-burger-item
+			+transition(0.3s)
+			+rotate(135deg)
+			margin-bottom: -3px
+			margin-top: 3px
+			&:after
+				display: none
+			&:before
+				+rotate(90deg)
+
+
+
+

@@ -1,0 +1,290 @@
+.main-content
+	display: block
+	+clearfix
+	background: #eef0fb
+.main-content-header
+	display: block
+	padding: 40px 0px 30px 79/1280*100%
+	+breakpoint($break-767)
+		padding: 20px 0px
+	a
+		font-size: 14px
+		color: #0077ff
+		line-height: 20px
+		+transition(0.2s)
+		&:hover
+			color: #000
+	h4
+		font-weight: 600
+		font-size: 26px
+		color: #000000
+		letter-spacing: 0.23px
+		text-align: left
+
+// content
+.content
+	float: left 
+	width: 825 / 1280 * 100%
+	padding-bottom: 20px
+	margin-left: 79/1280*100%
+	+breakpoint($break-767)
+		width: 100%
+		margin: 0px 0px 20px
+		+box-sizing(border-box)
+	.content-item
+		background: #ffffff
+		border-radius: 4px
+		min-height: 170px
+		margin-top: 15px
+		padding-left: 136px
+		padding-right: 38px
+		position: relative
+		+breakpoint($break-479)
+			padding: 0px 20px
+			text-align: center
+		&:first-child
+			margin-top: 0
+	.content-item-img
+		position: absolute
+		left: 0
+		top: 0
+		margin: 22px 23px 0px 33px
+		+breakpoint($break-479)
+			margin: 0px auto 0px
+			padding-top: 20px
+			display: block
+			position: relative
+			text-align: center
+	.content-img
+		float: left
+		position: relative
+		+breakpoint($break-479)
+			float: none
+			display: inline-block
+	.logo-mini
+		position: absolute
+		bottom: 0
+		right: 0
+		+breakpoint($break-479)
+			bottom: 30px
+			right: 50%
+			margin-right: -43px
+	.content-item-img-text
+		position: absolute
+		display: block
+		text-align: center
+		left: 0
+		bottom: -30px
+		line-height: 12px
+		+breakpoint($break-479)
+			position: relative
+			margin: auto
+			width: 75px
+			bottom: 0
+		&:hover::after
+			content: attr(data-title)
+			position: absolute
+			z-index: 5
+			left: -73px
+			top: 38px
+			background: rgba(#192937, 0.9)
+			min-width: 210px
+			font-size: 11px
+			font-weight: 400
+			color: #ffffff
+			line-height: 14px
+			text-align: center
+			padding: 10px 10px
+		&:hover::before
+			content: ""
+			position: absolute
+			z-index: 5
+			top: 30px
+			left: 34px
+			width: 0
+			height: 0
+			border-left: 10px solid transparent
+			border-right: 10px solid transparent
+			border-bottom: 8px solid rgba(#192937, 0.9)
+		p 
+			font-weight: 700
+			font-size: 11.19px
+			color: #6ab31b
+			line-height: 15.39px
+			text-align: left
+			display: inline-block
+			margin-bottom: -5px
+		span 
+			font-weight: 400
+			display: inline-block
+			font-size: 8px
+			color: #518c12
+			line-height: 15.39px
+			text-align: left
+
+	.content-item-img + .content-item-block
+		border-bottom: 1px solid #dddddd
+		padding-top: 15px
+		+breakpoint($break-479)
+			margin: auto
+			width: 188px
+			border: none
+	.content-item-block
+		display: block
+		+clearfix
+		padding: 5px 0 15px 0px
+		+box-sizing(border-box)
+		width: 100%
+		
+
+		.image-container 
+			cursor: pointer
+			position: relative
+			&:hover::after
+				content: attr(data-title)
+				position: absolute
+				z-index: 5
+				left: -24px
+				top: 30px
+				background: rgba(#192937, 0.9)
+				min-width: 70px
+				font-size: 11px
+				font-weight: 400
+				color: #ffffff
+				padding: 7px 4px
+				line-height: 14px
+				text-align: center
+			&:hover::before
+				content: ""
+				position: absolute
+				z-index: 5
+				top: 22px
+				left: 4px
+				width: 0
+				height: 0
+				border-left: 10px solid transparent
+				border-right: 10px solid transparent
+				border-bottom: 8px solid rgba(#192937, 0.9)
+		.content-item-block-left
+			float: left
+			+breakpoint($break-1150)
+				width: 195px
+			+breakpoint($break-767)
+				width: 100%
+			.content-item-blocks
+				float: left
+				margin-right: 25px
+				+breakpoint($break-479)
+					margin: 0px 10px
+				&:last-child
+					margin-right: 0
+				.star					
+					img 
+						margin-right: 2px
+				h4
+					font-weight: 700
+					font-size: 15px
+					color: #000000
+					line-height: 22px
+					text-align: left
+					img 
+						margin-left: 6px
+				p 
+					font-weight: 600
+					font-size: 15px
+					color: #000000
+					line-height: 22px
+					text-align: left
+				.text-bottom
+					font-weight: 400
+					font-size: 10px
+					color: #141414
+					line-height: 22px
+					text-align: left
+		.content-item-block-right
+			float: right
+			+breakpoint($break-1150)
+				width: 90px
+			+breakpoint($break-767)
+				float: none
+				width: 100%
+				padding-top: 10px
+				+clearfix
+				display: block
+			.content-item-blocks
+				float: left
+				+breakpoint($break-1150)
+					float: right
+				+breakpoint($break-767)
+					float: left
+					margin-top: 10px
+					margin-right: 15px
+				+breakpoint($break-479)
+					margin: 0px 0px 0px 10px
+				a
+					display: block
+					font-weight: 600
+				.discover
+					font-size: 10px
+					color: #0077ff
+					line-height: 19px
+					text-align: left
+					+transition(0.3s)
+					&:hover
+						color: #161688
+						span
+							color: #161688
+				.portfolio
+					font-size: 14px
+					color: #0077ff
+					letter-spacing: 0.5px
+					text-align: left
+					+transition(0.3s)
+					display: block
+				.hire
+					background: #0077ff
+					border-radius: 4px
+					padding: 10px 26px
+					font-size: 14px
+					color: #ffffff
+					margin-left: 23px
+					letter-spacing: 0.5px
+					text-align: center
+					+transition(0.3s)
+					+breakpoint($break-1150)
+						margin-left: 0
+						margin-top: 15px
+					+breakpoint($break-767)
+						margin: 0px
+					&:hover
+						color: #cccdcc  161688
+						background: #1111d4
+		.content-item-block-text
+			display: inline-block
+			vertical-align: top
+			width: 323/660*100%
+			margin-left: 20/660*100%
+			+breakpoint($break-1023)
+				display: block
+				width: 100%
+				margin: 10px 0 0px
+			&:first-child
+				margin: 0
+				width: 311/660*100%
+				+breakpoint($break-1023)
+					display: block
+					width: 100%
+			p
+				font-weight: 400
+				font-size: 13px
+				color: #141414
+				line-height: 21px
+				text-align: left
+	
+
+
+
+
+
+
+

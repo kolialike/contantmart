@@ -1,0 +1,65 @@
+// side-bar	
+.sidebar
+	width: 376 / 1280 * 100%
+	padding: 0px 61px
+	+box-sizing(border-box)
+	float: right
+	+breakpoint($break-1023)
+		padding: 0px 5px 0px 45px
+	+breakpoint($break-767)
+		float: none
+		display: block
+		width: 100%
+		padding: 0 0px 20px 45px
+		+clearfix
+	h4 
+		font-size: 15px
+		color: #000000
+		position: relative
+		padding: 0px 0px 10px
+	ul 
+		font-size: 14px
+		padding-bottom: 30px
+		color: #0077ff
+		line-height: 20px
+		li 
+			padding: 0px 0px 12px
+		a 
+			+transition(0.2s)
+			&:hover
+				color: #000
+	.expetrises
+		display: inline-block
+		span
+			+icon("expetrises")
+			position: absolute
+			top: 0
+			left: -35px
+	.categories
+		display: inline-block
+		span
+			+icon("categories")
+			position: absolute
+			top: 0
+			left: -35px
+	.languages
+		display: inline-block
+		span
+			+icon("languages")
+			position: absolute
+			top: 0
+			left: -35px
+	.country
+		display: inline-block
+		span
+			+icon("country")
+			position: absolute
+			top: 0
+			left: -35px
+	.cities
+		display: inline-block
+		span
+			+icon("cities")
+			position: absolute
+			top: 0
+			left: -30px
